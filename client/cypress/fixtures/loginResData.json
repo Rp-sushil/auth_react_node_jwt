@@ -1,0 +1,6 @@
+{
+    "user": {"_id": "6033658b0833a68db4a49536", "name": "Newton School", "email": "newtonschool@gmail.com"}, 
+    "auth_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOZXd0b24gU2Nob29sIEV4YW1wbGUiLCJpYXQiOjE2MTM5OTAwMTYsImV4cCI6MTY3Mjk3NTY0MTYsImF1ZCI6Ind3dy5leGFtcGxlLmNvbSIsInN1YiI6Im5ld3RvbnNjaG9vbEBnbWFpbC5jb20iLCJfaWQiOiI2MDMzNjU4YjA4MzNhNjhkYjRhNDk1MzYiLCJuYW1lIjoiTmV3dG9uIFNjaG9vbCIsImVtYWlsIjoibmV3dG9uc2Nob29sQGdtYWlsLmNvbSJ9.Ei_hXfL11xaEcg8A1ket1ga8o_gi5eF4JGgqbRWpmBo", 
+    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJOZXd0b24gU2Nob29sIEV4YW1wbGUiLCJpYXQiOjE2MTM5OTAwMTYsImV4cCI6MTY3Mjk3NTY0MTYsImF1ZCI6Ind3dy5leGFtcGxlLmNvbSIsInN1YiI6Im5ld3RvbnNjaG9vbEBnbWFpbC5jb20iLCJfaWQiOiI2MDMzNjU4YjA4MzNhNjhkYjRhNDk1MzYiLCJuYW1lIjoiTmV3dG9uIFNjaG9vbCIsImVtYWlsIjoibmV3dG9uc2Nob29sQGdtYWlsLmNvbSJ9.Ei_hXfL11xaEcg8A1ket1ga8o_gi5eF4JGgqbRWpmBo", 
+    "message": "Successfully Logged In..."
+}
