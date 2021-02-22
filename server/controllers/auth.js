@@ -13,7 +13,9 @@ const generateAuthToken = (_id, name, email) => {
   });
 };
 const generateRefreshToken = (_id, name, email) => {
-  return jwt.sign({ _id, name, email }, process.env.REFRESH_TOKEN_SECRET);
+  return jwt.sign({ _id, name, email }, process.env.REFRESH_TOKEN_SECRET, {
+    expiresIn: "30d",
+  });
 };
 
 const register = async (req, res) => {
@@ -105,7 +107,7 @@ const logout = async (req, res) => {
     const token = await RefreshToken.deleteOne({
       refresh_token: refresh_token,
     });
-    res.json({ token_id: token, message: "Successfully logged out" });
+    res.json({ token_id: token, message: "Successfully logged out!" });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -123,6 +125,7 @@ const generateNewauthToken = async (req, res) => {
         .json({ message: "You are logged out, Need to login again!" });
     const { _id, name, email } = req.user;
     const authToken = generateAuthToken(_id, name, email);
+    res.header("auth-token", authToken);
     return res.json({ message: "new token generated", auth_token: authToken });
   } catch (error) {
     return res.send(500).json(error.message);

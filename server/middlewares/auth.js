@@ -19,7 +19,7 @@ const verifyAuthToken = async (req, res, next) => {
       // makeAuthTokenReq(req, res, next);
       // console.log(data, "datatatata");
       if (!req.header("refresh-token")) {
-        return res.status(401).json({ message: "Acess denied!" });
+        return res.status(401).json({ message: "Access denied!" });
       }
       var options = {
         host: "localhost",
@@ -73,7 +73,7 @@ const verifyAuthToken = async (req, res, next) => {
 const verifyRefreshToken = (req, res, next) => {
   const token = req.header("refresh-token");
   console.log("refreshtokenverfication");
-  if (!token) return res.status(401).json({ message: "Acess denied!" });
+  if (!token) return res.status(401).json({ message: "Access denied!" });
   try {
     const verified = jwt.verify(token, process.env.REFRESH_TOKEN_SECRET);
     req.user = verified;

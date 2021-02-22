@@ -1,0 +1,9 @@
+{
+    "message": "Successfully logged out",
+    "token_id":
+        {
+            "deletedCount": 1,
+            "n": 1,
+            "ok": 1
+        }
+}

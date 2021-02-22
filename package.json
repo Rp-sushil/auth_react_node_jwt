@@ -19,9 +19,11 @@
     "express": "^4.17.1",
     "joi": "^17.3.0",
     "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
     "mocha": "^8.3.0",
     "mochawesome": "^6.2.2",
     "mongoose": "^5.11.15",
-    "react-toastify": "^7.0.3"
+    "react-toastify": "^7.0.3",
+    "sinon": "^9.2.4"
   }
 }
